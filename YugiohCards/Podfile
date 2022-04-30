@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '15.0'
+
+target 'YugiohCards' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for YugiohCards
+pod "Alamofire"
+pod "SDWebImage"
+
+  target 'YugiohCardsTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'YugiohCardsUITests' do
+    # Pods for testing
+  end
+
+end
