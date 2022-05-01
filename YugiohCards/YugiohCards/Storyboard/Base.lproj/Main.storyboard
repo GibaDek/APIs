@@ -38,6 +38,63 @@
             </objects>
             <point key="canvasLocation" x="132" y="84"/>
         </scene>
+        <!--Yugi Cards Detail View Controller-->
+        <scene sceneID="AOK-Fx-m5V">
+            <objects>
+                <viewController storyboardIdentifier="detailView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CdF-0B-GnM" customClass="YugiCardsDetailViewController" customModule="YugiohCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vsh-FT-Nc1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="81E-gu-IFQ">
+                                <rect key="frame" x="20" y="44" width="374" height="585"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="585" id="vAo-26-Svr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yh-Ts-fsc">
+                                <rect key="frame" x="20" y="634" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NX1-H5-yei"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uy0-Ko-owg">
+                                <rect key="frame" x="20" y="666" width="374" height="108"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6ax-ep-QUX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="81E-gu-IFQ" firstAttribute="leading" secondItem="6ax-ep-QUX" secondAttribute="leading" constant="20" id="4DX-rC-WUZ"/>
+                            <constraint firstItem="uy0-Ko-owg" firstAttribute="leading" secondItem="6ax-ep-QUX" secondAttribute="leading" constant="20" id="73E-hc-y6T"/>
+                            <constraint firstItem="6yh-Ts-fsc" firstAttribute="leading" secondItem="6ax-ep-QUX" secondAttribute="leading" constant="20" id="Tm0-XX-nsF"/>
+                            <constraint firstItem="81E-gu-IFQ" firstAttribute="centerX" secondItem="Vsh-FT-Nc1" secondAttribute="centerX" id="U8L-8C-exQ"/>
+                            <constraint firstItem="uy0-Ko-owg" firstAttribute="top" secondItem="6yh-Ts-fsc" secondAttribute="bottom" constant="11" id="fvZ-z9-UUY"/>
+                            <constraint firstItem="6ax-ep-QUX" firstAttribute="trailing" secondItem="uy0-Ko-owg" secondAttribute="trailing" constant="20" id="ljw-jU-No5"/>
+                            <constraint firstItem="81E-gu-IFQ" firstAttribute="top" secondItem="6ax-ep-QUX" secondAttribute="top" id="mWX-0M-Hwt"/>
+                            <constraint firstItem="6yh-Ts-fsc" firstAttribute="centerX" secondItem="Vsh-FT-Nc1" secondAttribute="centerX" id="qen-9P-TR5"/>
+                            <constraint firstItem="6ax-ep-QUX" firstAttribute="trailing" secondItem="81E-gu-IFQ" secondAttribute="trailing" constant="20" id="v75-Bt-mtS"/>
+                            <constraint firstItem="6ax-ep-QUX" firstAttribute="trailing" secondItem="6yh-Ts-fsc" secondAttribute="trailing" constant="20" id="xO8-wK-7xW"/>
+                            <constraint firstItem="6ax-ep-QUX" firstAttribute="bottom" secondItem="uy0-Ko-owg" secondAttribute="bottom" constant="88" id="yLq-Ag-FUO"/>
+                            <constraint firstItem="6yh-Ts-fsc" firstAttribute="top" secondItem="81E-gu-IFQ" secondAttribute="bottom" constant="5" id="zvG-d9-mTq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myCardDescriptionLabel" destination="uy0-Ko-owg" id="DkQ-uq-rbi"/>
+                        <outlet property="myCardImageView" destination="81E-gu-IFQ" id="daW-ET-5MK"/>
+                        <outlet property="myCardNameLabel" destination="6yh-Ts-fsc" id="Lhs-am-IZD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QTW-hW-W6I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800.00000000000011" y="83.705357142857139"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

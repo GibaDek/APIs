@@ -44,11 +44,12 @@ class YugiCardsViewController: UIViewController {
     }
     
     func setupTableView() {
+        self.myCardsListTableView.delegate = self
         self.myCardsListTableView.dataSource = self
     }
 }
 
-extension YugiCardsViewController: UITableViewDataSource {
+extension YugiCardsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return controller.numberOfRowsInSection
     }
@@ -59,6 +60,13 @@ extension YugiCardsViewController: UITableViewDataSource {
             return cell
         } else {
             return UITableViewCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let detailView = self.storyboard?.instantiateViewController(withIdentifier: controller.detailView) as? YugiCardsDetailViewController {
+            detailView.controller.setSelectedCardDetail(datum: controller.getYugiByIndex(indexPath: indexPath))
+            self.present(detailView, animated: true, completion: nil)
         }
     }
 }

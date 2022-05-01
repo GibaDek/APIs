@@ -19,6 +19,8 @@
 		9446D43A281DB8C700139A86 /* YugiCardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9446D439281DB8C700139A86 /* YugiCardsController.swift */; };
 		9446D43E281DBAE000139A86 /* YugiCardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9446D43C281DBAE000139A86 /* YugiCardsTableViewCell.swift */; };
 		9446D43F281DBAE000139A86 /* YugiCardsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9446D43D281DBAE000139A86 /* YugiCardsTableViewCell.xib */; };
+		94618DC4281E36BD00AAF359 /* YugiCardsDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94618DC3281E36BD00AAF359 /* YugiCardsDetailController.swift */; };
+		94618DC6281E37D300AAF359 /* YugiCardsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94618DC5281E37D300AAF359 /* YugiCardsDetailViewController.swift */; };
 		947D4E04281D685700082490 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D4E03281D685700082490 /* AppDelegate.swift */; };
 		947D4E06281D685700082490 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D4E05281D685700082490 /* SceneDelegate.swift */; };
 		947D4E08281D685700082490 /* YugiCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D4E07281D685700082490 /* YugiCardsViewController.swift */; };
@@ -64,6 +66,8 @@
 		9446D439281DB8C700139A86 /* YugiCardsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YugiCardsController.swift; sourceTree = "<group>"; };
 		9446D43C281DBAE000139A86 /* YugiCardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YugiCardsTableViewCell.swift; sourceTree = "<group>"; };
 		9446D43D281DBAE000139A86 /* YugiCardsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YugiCardsTableViewCell.xib; sourceTree = "<group>"; };
+		94618DC3281E36BD00AAF359 /* YugiCardsDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YugiCardsDetailController.swift; sourceTree = "<group>"; };
+		94618DC5281E37D300AAF359 /* YugiCardsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YugiCardsDetailViewController.swift; sourceTree = "<group>"; };
 		947D4E00281D685700082490 /* YugiohCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YugiohCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		947D4E03281D685700082490 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		947D4E05281D685700082490 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				9446D439281DB8C700139A86 /* YugiCardsController.swift */,
+				94618DC3281E36BD00AAF359 /* YugiCardsDetailController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -132,8 +137,9 @@
 		9446D426281DB43A00139A86 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9446D43B281DBAC200139A86 /* Cell */,
 				947D4E07281D685700082490 /* YugiCardsViewController.swift */,
+				94618DC5281E37D300AAF359 /* YugiCardsDetailViewController.swift */,
+				9446D43B281DBAC200139A86 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -498,6 +504,8 @@
 				9446D42E281DB6E400139A86 /* CardSet.swift in Sources */,
 				9446D42C281DB69500139A86 /* YugiCards.swift in Sources */,
 				947D4E04281D685700082490 /* AppDelegate.swift in Sources */,
+				94618DC6281E37D300AAF359 /* YugiCardsDetailViewController.swift in Sources */,
+				94618DC4281E36BD00AAF359 /* YugiCardsDetailController.swift in Sources */,
 				9446D43E281DBAE000139A86 /* YugiCardsTableViewCell.swift in Sources */,
 				9446D434281DB73500139A86 /* BanListInfo.swift in Sources */,
 				9446D43A281DB8C700139A86 /* YugiCardsController.swift in Sources */,

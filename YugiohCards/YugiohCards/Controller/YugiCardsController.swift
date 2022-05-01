@@ -9,6 +9,7 @@ import UIKit
 import Alamofire
 
 class YugiCardsController: NSObject {
+    let detailView = "detailView"
     let button = "OK"
     let message = "Lista Não Encontrada"
     let alert = "Alerta!"
